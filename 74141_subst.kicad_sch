@@ -162,7 +162,7 @@
 				)
 			)
 			(property "Value" "74141-SOCKET"
-				(at 1.524 14.732 0)
+				(at 1.524 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -224,7 +224,7 @@
 				)
 			)
 			(symbol "74141_1_0"
-				(pin output line
+				(pin passive line
 					(at -12.7 2.54 0)
 					(length 5.08)
 					(name "A"
@@ -242,7 +242,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin passive line
 					(at -12.7 0 0)
 					(length 5.08)
 					(name "B"
@@ -260,7 +260,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin passive line
 					(at -12.7 -2.54 0)
 					(length 5.08)
 					(name "C"
@@ -278,7 +278,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin passive line
 					(at -12.7 -5.08 0)
 					(length 5.08)
 					(name "D"
@@ -694,7 +694,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -750,7 +750,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -902,25 +902,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U1"
-				(at 2.1941 17.78 0)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "4028"
-				(at 2.1941 15.24 0)
+				(at -7.62 -16.51 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -975,7 +973,7 @@
 			)
 			(symbol "4028_1_0"
 				(pin input line
-					(at -12.7 2.54 0)
+					(at -12.7 5.08 0)
 					(length 5.08)
 					(name "A"
 						(effects
@@ -993,7 +991,7 @@
 					)
 				)
 				(pin input line
-					(at -12.7 0 0)
+					(at -12.7 2.54 0)
 					(length 5.08)
 					(name "B"
 						(effects
@@ -1011,7 +1009,7 @@
 					)
 				)
 				(pin input line
-					(at -12.7 -2.54 0)
+					(at -12.7 0 0)
 					(length 5.08)
 					(name "C"
 						(effects
@@ -1029,7 +1027,7 @@
 					)
 				)
 				(pin input line
-					(at -12.7 -5.08 0)
+					(at -12.7 -2.54 0)
 					(length 5.08)
 					(name "D"
 						(effects
@@ -2632,11 +2630,15 @@
 		)
 		(uuid "496636fc-5073-4b66-ae36-a1d4cb5630f3")
 	)
-	(junction
-		(at 55.88 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0b3cdb81-0e62-4ca5-b17c-963275e9963e")
+	(text "V2.1"
+		(exclude_from_sim no)
+		(at 229.616 189.484 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "6535c22e-e3dc-42eb-b199-4857d5b98fc9")
 	)
 	(junction
 		(at 55.88 120.65)
@@ -2656,13 +2658,11 @@
 		(color 0 0 0 0)
 		(uuid "59688db8-7f5a-4a89-a4e5-d08423974650")
 	)
-	(no_connect
-		(at 12.7 53.34)
-		(uuid "75cc8e88-b66c-45b7-a252-b0fce82865ba")
-	)
-	(no_connect
-		(at 29.21 53.34)
-		(uuid "938ee4a9-b3d3-4b9d-a56f-78ad527e4b4d")
+	(junction
+		(at 55.88 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b557ded6-99b2-4ef9-964e-b890dcd89802")
 	)
 	(wire
 		(pts
@@ -2686,7 +2686,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 118.11) (xy 88.9 118.11)
+			(xy 72.39 115.57) (xy 88.9 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2716,7 +2716,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 129.54) (xy 71.12 129.54)
+			(xy 76.2 128.27) (xy 71.12 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2736,7 +2736,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 120.65) (xy 88.9 120.65)
+			(xy 76.2 118.11) (xy 88.9 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2806,7 +2806,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 120.65) (xy 72.39 118.11)
+			(xy 72.39 119.38) (xy 72.39 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2826,7 +2826,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 115.57) (xy 88.9 115.57)
+			(xy 72.39 113.03) (xy 88.9 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2876,7 +2876,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 102.87) (xy 76.2 102.87)
+			(xy 71.12 100.33) (xy 76.2 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2936,17 +2936,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 100.33) (xy 55.88 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54824653-e982-49c5-b0aa-23863e259cd1")
-	)
-	(wire
-		(pts
-			(xy 71.12 120.65) (xy 72.39 120.65)
+			(xy 71.12 119.38) (xy 72.39 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3026,7 +3016,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 113.03) (xy 88.9 113.03)
+			(xy 76.2 110.49) (xy 88.9 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3086,7 +3076,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 127) (xy 55.88 129.54)
+			(xy 55.88 125.73) (xy 55.88 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3106,7 +3096,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 118.11) (xy 55.88 120.65)
+			(xy 55.88 121.92) (xy 55.88 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d75658c-03b6-4c11-9406-7d6c98241caf")
+	)
+	(wire
+		(pts
+			(xy 55.88 116.84) (xy 55.88 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3126,7 +3126,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 120.65) (xy 76.2 129.54)
+			(xy 76.2 118.11) (xy 76.2 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3176,16 +3176,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 120.65) (xy 55.88 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91a74286-8b2d-4873-9603-a69ded15f231")
-	)
-	(wire
-		(pts
 			(xy 128.27 72.39) (xy 124.46 72.39)
 		)
 		(stroke
@@ -3216,7 +3206,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 129.54) (xy 55.88 132.08)
+			(xy 55.88 129.54) (xy 55.88 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3276,7 +3266,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 111.76) (xy 72.39 115.57)
+			(xy 72.39 109.22) (xy 72.39 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3286,13 +3276,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 111.76) (xy 55.88 114.3)
+			(xy 55.88 97.79) (xy 55.88 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb6ae259-a07f-40c0-841e-b8767d2024ff")
+		(uuid "bd34af29-ad30-4a8a-8e47-993608f32780")
 	)
 	(wire
 		(pts
@@ -3306,7 +3296,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 60.96) (xy 55.88 100.33)
+			(xy 55.88 60.96) (xy 55.88 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3386,7 +3376,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 102.87) (xy 76.2 113.03)
+			(xy 76.2 100.33) (xy 76.2 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3396,7 +3386,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 111.76) (xy 72.39 111.76)
+			(xy 71.12 109.22) (xy 72.39 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3456,7 +3446,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 109.22) (xy 55.88 111.76)
+			(xy 55.88 106.68) (xy 55.88 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3465,7 +3455,7 @@
 		(uuid "f66efb01-736d-45ee-add6-04256354c5e4")
 	)
 	(label "D"
-		(at 85.09 120.65 0)
+		(at 85.09 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3515,7 +3505,7 @@
 		(uuid "1996a5ae-37bb-48b6-a6c6-7bf6e354bca6")
 	)
 	(label "B"
-		(at 85.09 115.57 0)
+		(at 85.09 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3705,7 +3695,7 @@
 		(uuid "6741ef60-3f18-44a2-aae1-c4bdff77063a")
 	)
 	(label "A"
-		(at 85.09 113.03 0)
+		(at 85.09 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3975,7 +3965,7 @@
 		(uuid "d05811e4-9a5a-474c-9177-0825ccfeb4fe")
 	)
 	(label "C"
-		(at 85.09 118.11 0)
+		(at 85.09 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4136,7 +4126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
+		(property "Footprint" "!Gloeidraad:TSSOP-16_4.4x5mm_P0.65mm"
 			(at 101.6 115.57 0)
 			(effects
 				(font
@@ -4352,7 +4342,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 63.5 120.65 0)
+		(at 63.5 119.38 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4360,7 +4350,7 @@
 		(dnp no)
 		(uuid "188ab0da-89f9-4cce-af0c-9ef05f4690d4")
 		(property "Reference" "U3"
-			(at 63.246 120.65 0)
+			(at 63.246 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +4358,7 @@
 			)
 		)
 		(property "Value" "74HCT08"
-			(at 71.628 124.46 0)
+			(at 71.628 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4366,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 63.5 120.65 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4375,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 63.5 120.65 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4394,7 +4384,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 63.5 120.65 0)
+			(at 63.5 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4478,7 +4468,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 132.08 91.948 90)
 			(effects
 				(font
@@ -4545,7 +4535,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 132.08 56.388 90)
 			(effects
 				(font
@@ -4589,7 +4579,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 63.5 102.87 0)
+		(at 63.5 100.33 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4597,7 +4587,7 @@
 		(dnp no)
 		(uuid "1ee418ac-dd5a-4568-830a-59bc8d8fab2a")
 		(property "Reference" "U3"
-			(at 63.246 103.124 0)
+			(at 63.246 100.584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4595,7 @@
 			)
 		)
 		(property "Value" "74HCT08"
-			(at 71.12 99.822 0)
+			(at 71.12 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4613,7 +4603,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 63.5 102.87 0)
+			(at 63.5 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4622,7 +4612,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 63.5 102.87 0)
+			(at 63.5 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4621,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 63.5 102.87 0)
+			(at 63.5 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4692,7 +4682,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 63.5 111.76 0)
+		(at 63.5 109.22 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4700,7 +4690,7 @@
 		(dnp no)
 		(uuid "1fe5d620-f744-4f5b-8c58-e75a7310dd6e")
 		(property "Reference" "U3"
-			(at 63.5 111.76 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4708,7 +4698,7 @@
 			)
 		)
 		(property "Value" "74HCT08"
-			(at 71.374 107.696 0)
+			(at 71.374 105.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4716,7 +4706,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 63.5 111.76 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4725,7 +4715,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 63.5 111.76 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4734,7 +4724,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 63.5 111.76 0)
+			(at 63.5 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5475,7 +5465,7 @@
 	(symbol
 		(lib_id "!Gloeidraad:MMDTA42")
 		(at 195.58 88.9 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5552,7 +5542,7 @@
 			(project "74141_subst"
 				(path "/e1308047-26ef-43bf-9ca1-f4b558699daf"
 					(reference "Q3")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
@@ -5582,7 +5572,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 180.34 90.678 90)
 			(effects
 				(font
@@ -5627,7 +5617,7 @@
 	(symbol
 		(lib_id "!Gloeidraad:MMDTA42")
 		(at 147.32 125.73 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5704,7 +5694,7 @@
 			(project "74141_subst"
 				(path "/e1308047-26ef-43bf-9ca1-f4b558699daf"
 					(reference "Q2")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
@@ -5734,7 +5724,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 132.08 109.728 90)
 			(effects
 				(font
@@ -5801,7 +5791,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 180.34 72.898 90)
 			(effects
 				(font
@@ -6169,7 +6159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 180.34 126.238 90)
 			(effects
 				(font
@@ -6214,7 +6204,7 @@
 	(symbol
 		(lib_id "!Gloeidraad:MMDTA42")
 		(at 195.58 106.68 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6291,7 +6281,7 @@
 			(project "74141_subst"
 				(path "/e1308047-26ef-43bf-9ca1-f4b558699daf"
 					(reference "Q2")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -6452,7 +6442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 132.08 74.168 90)
 			(effects
 				(font
@@ -6669,7 +6659,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 180.34 108.458 90)
 			(effects
 				(font
@@ -6778,7 +6768,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 63.5 129.54 0)
+		(at 63.5 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6786,7 +6776,7 @@
 		(dnp no)
 		(uuid "b1342c24-59d1-46a8-bcc4-57d399aefbe7")
 		(property "Reference" "U3"
-			(at 62.992 129.794 0)
+			(at 62.992 128.524 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6794,7 +6784,7 @@
 			)
 		)
 		(property "Value" "74HCT08"
-			(at 71.628 132.334 0)
+			(at 71.628 131.064 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6802,7 +6792,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 63.5 129.54 0)
+			(at 63.5 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6811,7 +6801,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 63.5 129.54 0)
+			(at 63.5 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6820,7 +6810,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 63.5 129.54 0)
+			(at 63.5 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7354,7 +7344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 180.34 55.118 90)
 			(effects
 				(font
@@ -7421,7 +7411,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "!Gloeidraad:R_0402_Pad0.72x0.64mm_HandSolder"
 			(at 132.08 127.508 90)
 			(effects
 				(font
@@ -7466,7 +7456,7 @@
 	(symbol
 		(lib_id "!Gloeidraad:MMDTA42")
 		(at 195.58 124.46 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7543,7 +7533,7 @@
 			(project "74141_subst"
 				(path "/e1308047-26ef-43bf-9ca1-f4b558699daf"
 					(reference "Q3")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
